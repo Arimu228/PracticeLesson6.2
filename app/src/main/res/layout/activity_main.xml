@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!--    /*На экране нарисовать EditText, Button(Add),Button(print on TextView), TextView.-->
+    <!--    Все вводимые значения в едитТекст добавлять в массив кнопкой add, на кнопку output,-->
+    <!--    показывать все значения в текстВью*/-->
+
+
+    <TextView
+        android:id="@+id/Text_tv"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/output_btn" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="251dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="60dp"
+        android:gravity="center"
+        android:hint="@string/write_something"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/add_btn"
+        android:layout_width="126dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="60dp"
+        android:text="@string/add"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
+
+    <Button
+        android:id="@+id/output_btn"
+        android:layout_width="126dp"
+        android:layout_height="83dp"
+        android:text="@string/output"
+        android:layout_marginTop="60dp"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_btn" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
